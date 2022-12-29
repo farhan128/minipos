@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_8"
+    android:layout_marginTop="@dimen/margin_8"
+    android:layout_marginRight="@dimen/margin_8"
+    android:layout_marginBottom="@dimen/margin_8"
+    android:orientation="horizontal"
+    app:cardCornerRadius="@dimen/margin_24"
+    android:elevation="@dimen/margin_8">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_180"
+        android:background="#F2F2F2"
+        android:gravity="center">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progresBar"
+            android:layout_centerInParent="true"/>
+
+            <ImageView
+                android:id="@+id/img_user"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="3dp"
+                android:adjustViewBounds="true"
+                android:alpha="0.9"
+                android:background="#16000000"
+                android:scaleType="fitCenter" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/margin_24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="#80000000"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_txt_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="@dimen/margin_4"
+                android:text="Title"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/margin_20" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
+
+
